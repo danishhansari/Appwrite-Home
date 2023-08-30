@@ -4,7 +4,9 @@ const Navbar = lazy(() => import("./components/Navbar"));
 const Hero = lazy(() => import("./components/Hero"));
 import "./index.css";
 import './style.css'
-import Features from "./components/Features";
+import Stats from "./components/Stats";
+const Features = lazy(() => import('./components/Features'))
+const Flexiblity = lazy(() => import('./components/Flexiblity'))
 function App() {
   return (
     <>
@@ -14,6 +16,8 @@ function App() {
       </Suspense>
       <Hero />
       <Features />
+      <Flexiblity />
+      <Stats />
     </>
   );
 }
