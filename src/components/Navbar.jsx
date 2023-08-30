@@ -1,3 +1,4 @@
+import ToggleSwitch from "./ToggleSwitch";
 import Button from "./utils/Button";
 const Navbar = () => {
   return (
@@ -20,6 +21,7 @@ const Navbar = () => {
             </li>
           </ul>
           <ul className="flex items-center gap-4">
+            <ToggleSwitch />
             <li className="cursor-pointer">Sign in</li>
             <Button text="Sign Up" />
           </ul>

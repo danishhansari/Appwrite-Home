@@ -1,6 +1,5 @@
 import { BsDiscord, BsTwitter, BsYoutube} from 'react-icons/bs'
 import { AiFillGithub } from 'react-icons/ai'
-// import { BsTwitter } from 'react-icons/bs'
 import { BiLogoLinkedin } from 'react-icons/bi'
 
 const Footer = () => {
