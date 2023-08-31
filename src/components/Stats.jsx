@@ -9,7 +9,7 @@ const Stats = () => {
         </p>
         <div className="flex items-center justify-between w-full">
           <div className="title w-full">
-            <h1 className="text-4xl font-bold text-black w-[55%] tracking-normal leading-2">
+            <h1 className="text-4xl font-bold text-black w-[65%] tracking-normal leading-2">
               Appwrite is built by the open-source community of 500+
               contributors
             </h1>

@@ -7,7 +7,7 @@ import "./style.css";
 import Stats from "./components/Stats";
 import Footer from "./components/Footer";
 import Twitter from "./components/Twitter";
-// import TweetGrid from "./components/TweetGrid";
+import CodeSnippets from "./components/CodeSnippets";
 const Features = lazy(() => import("./components/Features"));
 const Flexiblity = lazy(() => import("./components/Flexiblity"));
 function App() {
@@ -19,9 +19,10 @@ function App() {
         <Hero />
       </Suspense>
       <Features />
+      <CodeSnippets />
       <Flexiblity />
-      <Stats />
       <Twitter />
+      <Stats />
       <Footer />
 
     </>

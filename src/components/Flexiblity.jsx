@@ -1,14 +1,14 @@
 const Flexiblity = () => {
   return (
     <>
-      <div className="max-w-[1100px] mx-auto">
+      <div className="max-w-[1100px] mx-auto my-24">
         <p className="text-center text-base uppercase text-lg font-bold mt-24 mb-4">
           Flexiblity
         </p>
-        <h1 className="text-4xl font-bold text-black text-center w-1/2 mx-auto my-6">
+        <h1 className="text-4xl font-bold text-black text-center w-1/2 mx-auto my-8">
           Integrate with the tools and technologies you already love
         </h1>
-        <div className="w-[75%] mx-auto flex flex-wrap-reverse items-center justify-center gap-x-[3rem] gap-y-[1rem] my-2">
+        <div className="w-[80%] mx-auto flex flex-wrap-reverse items-center justify-center gap-x-[3rem] gap-y-[1rem] my-2">
           <div className="p-6 shadow-lg w-[80px] rounded-[100px]">
             <img src="./python.svg" alt="Python" />
           </div>
