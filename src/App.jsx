@@ -7,6 +7,7 @@ import "./style.css";
 import Stats from "./components/Stats";
 import Footer from "./components/Footer";
 import Twitter from "./components/Twitter";
+// import TweetGrid from "./components/TweetGrid";
 const Features = lazy(() => import("./components/Features"));
 const Flexiblity = lazy(() => import("./components/Flexiblity"));
 function App() {
