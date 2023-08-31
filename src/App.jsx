@@ -6,6 +6,7 @@ import "./index.css";
 import "./style.css";
 import Stats from "./components/Stats";
 import Footer from "./components/Footer";
+import Twitter from "./components/Twitter";
 const Features = lazy(() => import("./components/Features"));
 const Flexiblity = lazy(() => import("./components/Flexiblity"));
 function App() {
@@ -19,7 +20,9 @@ function App() {
       <Features />
       <Flexiblity />
       <Stats />
+      <Twitter />
       <Footer />
+
     </>
   );
 }
