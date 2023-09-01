@@ -36,7 +36,7 @@ const url = storage.getFileDownload(
           <button>Storage</button>
         </div>
 
-        <div className="flex">
+        <div className="flex items-center">
           <div className="text-left w-full flex flex-col gap-8">
             <button className="text-left border-l-2 pl-8 border-base">
               <h2>Upload File</h2>
@@ -65,9 +65,11 @@ const url = storage.getFileDownload(
               <option value="Swift SDK">Swift SDK</option>
             </select>
             <div className="code-snippet font-bold p-4">
+              <pre>
             <Light language="jsx" style={ atomOneDark } className="rounded-lg">
               {codeSnippets}
             </Light>
+              </pre>
             </div>
           </div>
         </div>

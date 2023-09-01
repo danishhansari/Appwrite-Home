@@ -17,14 +17,13 @@ function App() {
         <DiscordAd />
         <Navbar />
         <Hero />
-      </Suspense>
       <Features />
       <CodeSnippets />
       <Flexiblity />
       <Twitter />
       <Stats />
       <Footer />
-
+      </Suspense>
     </>
   );
 }

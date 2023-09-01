@@ -11,9 +11,9 @@ const tweetData = [
 const TweetGrid = () => {
   return (
     <>
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+    <div className="grid grid-cols-3 md:grid-cols-3 gap-4">
        {tweetData.map((elem, index) => (
-          <div key={index}>
+        <div className="h-auto max-w-full" key={index}>
           <Tweet
             key={index}
             img={elem.img}
@@ -22,11 +22,11 @@ const TweetGrid = () => {
             userName={elem.userName}
             date={elem.date}
             />
-        </div>
-        ))}
-        </div>
+            </div>
+             ))}
+   </div>
     </>
   )
 }
 
-export default TweetGrid
+export default TweetGrid;
