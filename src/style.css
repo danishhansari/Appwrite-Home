@@ -5,3 +5,11 @@
 .code-snippet{
   font-family: 'Source Code Pro', Arial, Helvetica, sans-serif;
 }
+#light{
+  background: white !important;
+  color: black !important;
+}
+#dark {
+  background: black !important;
+  color: white !important;
+}

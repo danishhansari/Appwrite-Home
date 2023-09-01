@@ -7,7 +7,6 @@ const CodeSnippets = () => {
   const [toggleState, setToggleState] = useState(1);
 
   const toggleBtn = (index) => {
-    console.log(index);
     setToggleState(index);
   };
   return (
@@ -39,8 +38,8 @@ const CodeSnippets = () => {
           ))}
         </div>
 
-        <div className="flex items-center">
-          <div className="text-left w-full flex flex-col gap-8">
+        <div className="flex justify-between">
+          <div className="text-left w-full flex flex-col gap-8 self-center">
             {sideBtns.map((button) => (
               <button key={button.id} className={`${toggleState == button.id ? "border-l-4 border-base": "border-0"} text-left pl-4`} onClick={() => toggleBtn(button.id)} >
                 <p>{button.heading}</p>
