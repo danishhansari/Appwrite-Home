@@ -7,10 +7,10 @@ const Footer = () => {
     <>
       <div>
         <div className="max-w-[1100px] mx-auto border-y border-gray-300 py-8 px-4">
-          <div className="flex justify-between pb-5 flex-col sm:flex-row">
+          <div className="flex pb-5 flex-col sm:flex-row justify-center sm:items-start ">
             <div className="logo w-full">
-              <img className="w-[180px]" src="./appwrite-light.svg" alt="" />
-              <div className="flex text-2xl text-white items-center gap-4 mt-12">
+              <img className="w-[180px] mx-auto sm:mx-0" src="./appwrite-light.svg" alt="" />
+              <div className="flex justify-center sm:justify-start text-2xl text-white items-center gap-4 mt-12">
                 <div className="bg-black text-white p-2 rounded-[2rem]">
                   <AiFillGithub />
                 </div>
@@ -28,7 +28,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="list w-full flex flex-wrap justify-evenly text-black">
+            <div className="list w-full flex justify-evenly text-black mt-8">
               <ul className="flex flex-col gap-4 text-gray-400 w-[50%]">
                 <li className="font-bold text-black">Product</li>
                 <li>Docs</li>

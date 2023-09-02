@@ -38,8 +38,9 @@ const CodeSnippets = () => {
           ))}
         </div>
 
-        <div className="flex justify-between">
-          <div className="text-left w-full flex flex-col gap-8 self-center">
+        <div className="flex justify-between flex-col sm:flex-row">
+
+          <div className="text-left w-full flex flex-col gap-8 self-center px-2">
             {sideBtns.map((button) => (
               <button key={button.id} className={`${toggleState == button.id ? "border-l-4 border-base": "border-0"} text-left pl-4`} onClick={() => toggleBtn(button.id)} >
                 <p>{button.heading}</p>
@@ -49,8 +50,8 @@ const CodeSnippets = () => {
 
           </div>
 
-          <div className="code w-full flex flex-col">
-            <select className="inline-block self-end p-2 rounded text-black bg-gray-200" onChange={(e) => toggleBtn(Number(e.target.value))}>
+          <div className="code w-full flex flex-col ">
+            <select className="inline-block self-end p-2 rounded text-black bg-gray-200 mr-6" onChange={(e) => toggleBtn(Number(e.target.value))}>
               <option value="1" >Web SDK</option>
               <option value="2">Flutter SDK</option>
               <option value="3" >Android SDK</option>
@@ -65,6 +66,7 @@ const CodeSnippets = () => {
               </Light>
             </div>
           </div>
+
         </div>
       </div>
     </>

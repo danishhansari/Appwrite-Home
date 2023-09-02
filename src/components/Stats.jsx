@@ -3,7 +3,7 @@ import Button from "./utils/Button";
 const Stats = () => {
   return (
     <>
-      <div className="max-w-[1100px] mx-auto mt-24 mb-8 w-full">
+      <div className="max-w-[1100px] mx-auto mt-24 mb-8 w-full px-4">
         <p className="uppercase text-base font-bold text-xl  text-center md:text-left">
           open source forever
         </p>
