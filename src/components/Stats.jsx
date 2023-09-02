@@ -9,12 +9,12 @@ const Stats = () => {
         </p>
         <div className="flex flex-col md:flex-row text-center md:text-left items-center justify-between w-full gap-4">
           <div className="title w-full">
-            <h1 className="text-4xl font-bold text-black md:w-[65%] tracking-normal leading-2">
+            <h1 className="text-3xl my-3 font-bold text-black md:w-[65%] tracking-normal leading-2">
               Appwrite is built by the open-source community of 500+
               contributors
             </h1>
           </div>
-          <div className="grid grid-cols-2 w-full sm:w-1/2 gap-6">
+          <div className="grid grid-cols-2 w-full sm:w-1/2 gap-6 my-4">
             <div className="sm:text-right">
               <h1 className="font-bold text-4xl text-black">8,010</h1>
               <p className="text-gray-400 text-xl mt-4 sm:text-left">Pull Request</p>
