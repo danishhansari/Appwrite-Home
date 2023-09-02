@@ -14,22 +14,22 @@ const Stats = () => {
               contributors
             </h1>
           </div>
-          <div className="grid grid-cols-2 w-1/2 gap-6">
-            <div className="text-right">
+          <div className="grid grid-cols-2 w-full sm:w-1/2 gap-6">
+            <div className="sm:text-right">
               <h1 className="font-bold text-4xl text-black">8,010</h1>
-              <p className="text-gray-400 text-xl mt-4">Pull Request</p>
+              <p className="text-gray-400 text-xl mt-4 sm:text-left">Pull Request</p>
             </div>
-            <div className="text-right">
+            <div className="sm:text-right">
               <h1 className="font-bold text-4xl text-black">4,962</h1>
-              <p className="text-gray-400 text-xl mt-4">Forks</p>
+              <p className="text-gray-400 text-xl mt-4 sm:text-right">Forks</p>
             </div>
-            <div className="text-right">
+            <div className="sm:text-right">
               <h1 className="font-bold text-4xl text-black">32,027</h1>
-              <p className="text-gray-400 text-xl mt-2">Stars</p>
+              <p className="text-gray-400 text-xl mt-2 sm:text-right">Stars</p>
             </div>
-            <div className="text-right">
+            <div className="sm:text-right">
               <h1 className="font-bold text-4xl text-black">15,091</h1>
-              <p className="text-gray-400 text-xl mt-2 text-right">Commits</p>
+              <p className="text-gray-400 text-xl mt-2 sm:text-right">Commits</p>
             </div>
           </div>
         </div>
