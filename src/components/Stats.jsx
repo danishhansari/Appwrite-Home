@@ -4,12 +4,12 @@ const Stats = () => {
   return (
     <>
       <div className="max-w-[1100px] mx-auto mt-24 mb-8 w-full">
-        <p className="uppercase text-base font-bold text-xl">
+        <p className="uppercase text-base font-bold text-xl  text-center md:text-left">
           open source forever
         </p>
-        <div className="flex items-center justify-between w-full">
+        <div className="flex flex-col md:flex-row text-center md:text-left items-center justify-between w-full gap-4">
           <div className="title w-full">
-            <h1 className="text-4xl font-bold text-black w-[65%] tracking-normal leading-2">
+            <h1 className="text-4xl font-bold text-black md:w-[65%] tracking-normal leading-2">
               Appwrite is built by the open-source community of 500+
               contributors
             </h1>
@@ -33,12 +33,14 @@ const Stats = () => {
             </div>
           </div>
         </div>
-        <div className="github-username mb-8">
+        <div className="github-username mb-8 text-center sm:text-left">
           <AiFillGithub className="inline mr-2 text-xl" />
-          <span className="text-gray-400 text-xl">github.com/</span>{" "}
+          <span className="text-gray-400 text-xl text-center">github.com/</span>
           <span className="text-black text-xl">appwrite</span>
         </div>
+        <div className="btn text-center sm:text-left">
         <Button text={"Get Started"} />
+        </div>
       </div>
     </>
   );

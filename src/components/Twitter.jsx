@@ -9,7 +9,7 @@ const Twitter = () => {
           <h2 className="text-center text-base uppercase font-bold">
             join the community
           </h2>
-          <h1 className="text-black text-4xl font-bold w-[60%] mx-auto text-center mt-4">
+          <h1 className="text-black text-4xl font-bold w-full md:w-[60%] mx-auto text-center mt-4">
             Join the thriving community of Appwrite developers today
           </h1>
           <div className="text-center my-10">

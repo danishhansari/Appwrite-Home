@@ -15,7 +15,7 @@ const Flexiblity = lazy(() => import("./components/Flexiblity"));
 export const ThemeContext = createContext(null)
 
 function App() {
-  const [theme, setTheme] = useState("dark")
+  const [theme, setTheme] = useState("light")
 
   const toggleTheme = () => {
     setTheme((curr) => (curr === "light" ? "dark" : "light"))
@@ -34,7 +34,7 @@ function App() {
           <Twitter />
           <Stats />
           <Footer />
-          <ReactSwitch onChange={toggleTheme} checked={theme === 'dark' }/>
+          <ReactSwitch onChange={toggleTheme} checked={theme === 'light' }/>
         </div>
         </ThemeContext.Provider> 
       </Suspense>
