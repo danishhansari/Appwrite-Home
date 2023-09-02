@@ -8,7 +8,6 @@ import Stats from "./components/Stats";
 import Footer from "./components/Footer";
 import Twitter from "./components/Twitter";
 import CodeSnippets from "./components/CodeSnippets";
-import ReactSwitch from "react-switch";
 const Features = lazy(() => import("./components/Features"));
 const Flexiblity = lazy(() => import("./components/Flexiblity"));
 
@@ -34,7 +33,6 @@ function App() {
           <Twitter />
           <Stats />
           <Footer theme={theme}/>
-          <ReactSwitch onChange={toggleTheme} checked={theme === 'light' }/>
         </div>
         </ThemeContext.Provider> 
       </Suspense>
