@@ -7,9 +7,17 @@
 }
 #light{
   background: white !important;
-  color: black !important;
+  color: #40404a !important;
 }
 #dark {
-  background: black !important;
-  color: white !important;
+  background: #191c2c !important;
+  color: #c7d8eb !important;
+}
+#dark .bg-base {
+  background: #c7d8eb;
+  color: #40404a;
+}
+#light .bg-base {
+  background: #f02e65;
+  color: white;
 }

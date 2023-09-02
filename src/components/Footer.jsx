@@ -2,14 +2,18 @@ import { BsDiscord, BsTwitter, BsYoutube } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
 import { BiLogoLinkedin } from "react-icons/bi";
 
-const Footer = () => {
+const Footer = ({theme}) => {
   return (
     <>
       <div>
         <div className="max-w-[1100px] mx-auto border-y border-gray-300 py-8 px-4">
           <div className="flex pb-5 flex-col sm:flex-row justify-center sm:items-start ">
             <div className="logo w-full">
+            {theme === "light" ? (
               <img className="w-[180px] mx-auto sm:mx-0" src="./appwrite-light.svg" alt="" />
+            ) : (
+              <img className="w-[180px] mx-auto sm:mx-0" src="./appwrite-dark.svg" alt="" />
+            )}
               <div className="flex justify-center sm:justify-start text-2xl text-white items-center gap-4 mt-12">
                 <div className="bg-black text-white p-2 rounded-[2rem]">
                   <AiFillGithub />
@@ -30,7 +34,7 @@ const Footer = () => {
             </div>
             <div className="list w-full flex justify-evenly text-black mt-8">
               <ul className="flex flex-col gap-4 text-gray-400 w-[50%]">
-                <li className="font-bold text-black">Product</li>
+                <li className="font-bold">Product</li>
                 <li>Docs</li>
                 <li>Self Hosting</li>
                 <li>Web</li>
@@ -40,7 +44,7 @@ const Footer = () => {
                 <li>Server</li>
               </ul>
               <ul className="flex flex-col gap-4 text-gray-400 w-[50%]">
-                <li className="font-bold text-black">Features</li>
+                <li className="font-bold">Features</li>
                 <li>Databases</li>
                 <li>Authentication</li>
                 <li>Storage</li>
@@ -48,7 +52,7 @@ const Footer = () => {
                 <li>Realtime</li>
               </ul>
               <ul className="flex flex-col gap-4 text-gray-400 w-[50%] text-left">
-                <li className="font-bold text-black">About</li>
+                <li className="font-bold ">About</li>
                 <li>Company</li>
                 <li>Blog</li>
                 <li>Community</li>

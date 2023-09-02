@@ -1,7 +1,7 @@
 const Tweet = ({ img, user, userName, tweet, date }) => {
   return (
     <>
-      <div className="p-4 rounded-xl border border-dark">
+      <div className="p-4 rounded-xl border border-[#c7d8eb] shadow-lg">
         <div className="flex items-center gap-4">
           <img src={img} alt={user} />
           <div>

@@ -1,4 +1,4 @@
-const Flexiblity = () => {
+const Flexiblity = ({ theme }) => {
   return (
     <>
       <div className="max-w-[1100px] mx-auto my-24 px-1">
@@ -24,8 +24,16 @@ const Flexiblity = () => {
           <div className="p-6 shadow-lg w-[80px] rounded-[100px]">
             <img src="./swift.svg" alt="Swift" />
           </div>
+
+
           <div className="p-6 shadow-lg w-[80px] rounded-[100px]">
-            <img src="./deno-dark.svg" alt="" />
+            {theme === "light" ? (
+              <img src="./deno-dark.svg" alt="" />
+            ) : (
+              <img src="./deno-light.svg" alt="Deno" />
+            )             
+            }
+
           </div>
           <div className="p-6 shadow-lg w-[80px] rounded-[100px]">
             <img src="./net.svg" alt="Dotnet" />
@@ -37,7 +45,13 @@ const Flexiblity = () => {
             <img src="./flutter.svg" alt="flutter" />
           </div>
           <div className="p-6 shadow-lg w-[80px] rounded-[100px]">
-            <img src="./apple-dark.svg" alt="Apple" />
+            {theme === "light" ? (
+              <img src="./apple-dark.svg" alt="Apple" />
+            ) : (
+              <img src="./apple-light.svg" alt="Apple" />
+            )
+          }
+
           </div>
           <div className="p-6 shadow-lg w-[80px] rounded-[100px]">
             <img src="./android.svg" alt="Android" />

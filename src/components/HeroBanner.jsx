@@ -1,11 +1,17 @@
-const HeroBanner = () => {
-  return (
-    <>
-      <div className="my-6">
-        <img src="./screen.png" className="w-full" alt="" />
-      </div>
-    </>
-  );
-};
+const HeroBanner = ({theme}) => {
+  const lightImagePath = "./screen.png";
+  const darkImagePath = "./screen-dark.png";
 
-export default HeroBanner;
+  
+  return (
+    <div className="my-6 px-4">
+      {theme === "light" ? (
+        <img src={lightImagePath} alt="Light Screen" />
+      ) : (
+        <img src={darkImagePath} alt="Dark Screen" />
+      )
+    }
+    </div>
+  ) 
+}
+export default HeroBanner

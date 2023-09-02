@@ -15,25 +15,25 @@ const Flexiblity = lazy(() => import("./components/Flexiblity"));
 export const ThemeContext = createContext(null)
 
 function App() {
-  const [theme, setTheme] = useState("light")
+    const [theme, setTheme] = useState("light")
 
-  const toggleTheme = () => {
-    setTheme((curr) => (curr === "light" ? "dark" : "light"))
-  }
+    const toggleTheme = () => {
+      setTheme((curr) => (curr === "light" ? "dark" : "light"))
+    }
   return (
     <>
       <Suspense fallback={<div className="text-center">...</div>}>
         <ThemeContext.Provider value={{theme, toggleTheme}}>
         <div id={theme}>
           <DiscordAd />
-          <Navbar theme={theme} toggleTheme={toggleTheme}/>
-          <Hero />
+          <Navbar theme={theme}/>
+          <Hero theme={theme}/>
           <Features />
           <CodeSnippets />
-          <Flexiblity />
+          <Flexiblity theme={theme}/>
           <Twitter />
           <Stats />
-          <Footer />
+          <Footer theme={theme}/>
           <ReactSwitch onChange={toggleTheme} checked={theme === 'light' }/>
         </div>
         </ThemeContext.Provider> 
