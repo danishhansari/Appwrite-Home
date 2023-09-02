@@ -22,7 +22,7 @@ const CodeSnippets = () => {
           All Appwrite SDKs are carefully designed to make developers lives
           easier
         </p>
-        <div className="btns flex gap-1 text-lg font-light items-center justify-center mb-8 overflow-x-auto">
+        <div className="btns flex gap-1 text-lg font-light items-center justify-center mb-8 flex-wrap">
           {ToggleBtns.map((button) => (
             <button
               key={button.id}
